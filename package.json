@@ -16,13 +16,13 @@
     "raspberry"
   ],
   "scripts": {
-    "postinstall": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron"
+    "postinstall-old": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron",
+    "postinstall"    : "./postinstall"
   },
   "dependencies": {
     "onoff": "latest"
   },
-  "devDependencies": {
-    "electron-rebuild": "^1.2.1",
+  "devDependencies1": {
     "eslint": "^5.0.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
